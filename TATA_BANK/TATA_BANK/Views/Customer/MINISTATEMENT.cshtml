@@ -1,0 +1,56 @@
+﻿@model IEnumerable<MODELS.Fund_Transfer>
+
+@{
+    ViewBag.Title = "MINISTATEMENT";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MINI STATEMENT</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FROM_ACCNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TO_ACCNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRANSACTION_TYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AMOUNT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FROM_ACCNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TO_ACCNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRANSACTION_TYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AMOUNT)
+        </td>
+        @*<td>
+            @Html.ActionLink("TRANSFER", "FUND_TRANSFER", new { accno = item.FROM_ACCNO })
+        </td>*@
+    </tr>
+}
+
+</table>

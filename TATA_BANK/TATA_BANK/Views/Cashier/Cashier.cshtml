@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Cashier";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cashier</h2>
+<style>
+    #04 {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+    }
+    .image {
+        opacity: 1;
+        display: block;
+        width: 75%;
+        height: 50%;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        opacity: 1;
+        display: block;
+        width: 75%;
+        height: 50%;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        text-align: center;
+    }
+
+    .image:hover {
+        opacity: 0.3;
+    }
+
+    .text:hover {
+        opacity: 0.3;
+    }
+
+    .text {
+        background-color: #0094ff;
+        color: black;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+</style>
+<div class="container">
+    <div class="row" style="align-content:center">
+        <div class="col-md-4">
+            <br />
+            <br />
+            <div id="04">
+                <a href='@Url.Action("INSERT_CUSTOMER","Cashier")'><img src="~/Images/cr.png" alt="Avatar" class="image" height="75px" width="100px">    </a>
+            </div>
+            <br />
+            <div class="middle">
+                <a href='@Url.Action("INSERT_CUSTOMER","Cashier")'><input id="Button1" class="text" type="button" value="Create Account" /></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="04">
+                <a href='@Url.Action("Fund_Transfer","Cashier")'><img src="~/Images/mt.jpg" alt="Avatar" class="image" height="80px" width="100px" /></a>
+            </div>
+            <br />
+            <div class="middle">
+                <a href='@Url.Action("Fund_Transfer","Cashier")'> <input id="Button1" class="text" type="button" value="Fund_Transfer" /></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="04">
+                <a href='@Url.Action("MANAGE_ACCOUNT","Cashier")'><img src="~/Images/ed.png" alt="Avatar" class="image" height="75px" width="100px" /></a>
+
+            </div>
+            <br />
+            <div class="middle">
+                <a href='@Url.Action("MANAGE_ACCOUNT","Cashier")'>  <input id="Button1" class="text" type="button" value="MANAGE_ACCOUNT" /></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

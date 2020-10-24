@@ -1,0 +1,7 @@
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\IDENTITY\bin\Debug\IDENTITY.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\IDENTITY\bin\Debug\IDENTITY.pdb
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\IDENTITY\bin\Debug\MODELS.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\IDENTITY\bin\Debug\MODELS.pdb
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\IDENTITY\obj\Debug\IDENTITY.csprojResolveAssemblyReference.cache
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\IDENTITY\obj\Debug\IDENTITY.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\IDENTITY\obj\Debug\IDENTITY.pdb

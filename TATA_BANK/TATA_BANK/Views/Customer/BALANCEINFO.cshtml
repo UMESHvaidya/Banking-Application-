@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MODELS.CUSTOMER>
+
+@{
+    ViewBag.Title = "BALANCEINFO";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BALANCEINFO</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_NO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MO_NO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AMOUNT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_NO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MO_NO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AMOUNT)
+        </td>
+        <td>
+            @Html.ActionLink("Fund_Transfer", "Fund_Transfer", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Deposit", "Deposit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Withdraw", "Withdraw", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MODELS.CUSTOMER>
+
+@{
+    ViewBag.Title = "VIEWMANAGER";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>VIEWMANAGER</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_NO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MO_NO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AGE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMAIL_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AMOUNT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AADHAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACCNO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_NO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MO_NO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AMOUNT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AADHAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACCNO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

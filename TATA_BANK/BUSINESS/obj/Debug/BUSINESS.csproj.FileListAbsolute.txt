@@ -1,0 +1,11 @@
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\BUSINESS.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\BUSINESS.pdb
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\DATA.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\IDENTITY.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\MODELS.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\DATA.pdb
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\IDENTITY.pdb
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\bin\Debug\MODELS.pdb
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\obj\Debug\BUSINESS.csprojResolveAssemblyReference.cache
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\obj\Debug\BUSINESS.dll
+d:\users\1580420\documents\visual studio 2015\Projects\TATA_BANK\BUSINESS\obj\Debug\BUSINESS.pdb
